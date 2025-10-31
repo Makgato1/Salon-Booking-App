@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nails by Precoius</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fff0f6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header and Nav */
+    header {
+      background-color: #ff85c1;
+      color: white;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #ffe6f0;
+    }
+
+    /* Sections */
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .section:nth-of-type(even) {
+      background-color: #fff5f9;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #d63384;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .service h3 {
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Contact */
+    .contact-info {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff85c1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive nav */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Nails by Precious</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="section" id="home">
+    <h1>Welcome to Nails by Precious</h1>
+    <p>Get pampered with high-quality nail services in a relaxing environment. Your beauty is our passion.</p>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h1>About Precious</h1>
+    <p>Hi! I'm Precious, a licensed nail technician with 5+ years of experience in creative and classic nail art. I specialize in manicures, pedicures, gel nails, and custom designs to help you feel your best.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <h1>Services</h1>
+    <div class="services">
+      <div class="service">
+        <h3>Classic Manicure</h3>
+        <p>Includes trimming, shaping, cuticle care, and polish.</p>
+      </div>
+      <div class="service">
+        <h3>Gel Nails</h3>
+        <p>Long-lasting gel polish with a glossy finish and durability.</p>
+      </div>
+      <div class="service">
+        <h3>Custom Nail Art</h3>
+        <p>Hand-painted designs, rhinestones, and more for a unique style.</p>
+      </div>
+      <div class="service">
+        <h3>Pedicures</h3>
+        <p>Spa pedicures with exfoliation and massage for ultimate relaxation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.dFKiXDxv6ryTy6glubZdHAHaHa?w=250&h=250&c=8&rs=1&qlt=70&r=0&o=7&cb=thws4&pid=3.1&rm=3" alt="Nail design 1">
+      <img src="https://tse1.explicit.bing.net/th/id/OIP.DEll_edZI-In3zgXcKU4ZQHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nail design 2">
+      <img src="https://ts3.explicit.bing.net/th?id=OIP.RPqs2T7RmMwAZ0tPXlgTCQHaHa&pid=15.1" alt="Nail design 3">
+      <img src="https://www.gosupps.com/media/catalog/product/cache/25/image/1500x/040ec09b1e35df139433887a97daa66f/7/1/71SiJyrm60L._SL1500_.jpg" alt="Nail design 4">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h1>Contact</h1>
+    <p class="contact-info">
+      📍 05 cassandra avenue bedworthpark vereeninging<br/>
+      📞 (079 581 9702)<br/>
+      📧 <a href="mailto:maropengprecious247@gmail">maropengprecious247@gmail.com</a><br/>
+      📱 Follow on Instagram: <a href="https://instagram.com/nailsbyprecious" target="_blank">@nailsbyprecious</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nails by Precious. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
